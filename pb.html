@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  
+  <link rel="shortcut icon" href="logodarwin.jpeg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#customers').DataTable();
+    });
+  </script>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    /* Fixed sidenav, full height */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a,
+    .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* On mouse-over */
+    .sidenav a:hover,
+    .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      /* Same as the width of the sidenav */
+      font-size: 20px;
+      /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    /* Add an active class to the active dropdown button */
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #262626;
+      padding-left: 8px;
+    }
+
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .blinking {
+      animation: blinkingText 1.2s infinite;
+    }
+
+    @keyframes blinkingText {
+      0% {
+        color: #000;
+      }
+
+      49% {
+        color: #000;
+      }
+
+      60% {
+        color: transparent;
+      }
+
+      99% {
+        color: transparent;
+      }
+
+      100% {
+        color: #000;
+      }
+    }
+
+    .button {
+
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #04AA6D;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #8e8d3e
+    }
+
+    .button:active {
+      background-color: #04AA6D;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+  </style>
+  <title>DPRL- Professional Background</title>
+</head>
+
+<body>
+
+  <div class="sidenav">
+    <img src="logodarwin.jpeg" width="250px" height="150 px">
+    <a href="welcome.html">Home</a>
+
+    
+    <button class="dropdown-btn">About A.H.S.
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="fb.html">Family Background</a>
+      <a href="pb.html">Professional Background</a>
+    </div>
+      <a href="plc.html">PLCs</a>
+    <button class="dropdown-btn">Media
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="https://www.darwinpgc.com/gallery">Award</a>
+      <a href="https://www.ajayharinathsingh.com/news.html">News</a>
+     
+    </div>
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="https://www.ajayharinathsingh.com/index">Achievements</a>
+      <a href="https://www.ajayharinathsingh.com/awards">Awards</a>
+      <a href="https://www.ajayharinathsingh.com/media">Media</a>
+    </div>
+   
+    <a href="https://www.dprl.in/images/refinery-direct-sale-ppt.pdf">Company Profile</a>
+    <a href="legal.html">Legal</a>
+    <a href="https://www.youtube.com/c/DarwinPlatformGroupOfCompanies/videos">YouTube</a>
+    <br>
+    <br>
+    <a href="logout.html">LOG OUT</a>
+  </div>
+
+  <div class="main">
+    <MARQUEE>
+      <FONT COLOR="RED">Hello, Everybody! I (JAYANTA DUTTA) have accumulated many info from Google, Youtube, Press, Media, Magazine, Social Sites about Darwin Platform Group of Companies, and I share these info with you for presentation purpose only. </FONT>
+      <FONT COLOR="green"><b> DPGC</b></FONT>
+    </MARQUEE>
+    
+    
+
+ 
+    <br>
+    <br>
+    <h2><CENTER><U></U></CENTER> </h2><BR><BR>
+    <table id="customers" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th><center>Name</center></th>
+          <th><center>Link</center></th>
+          
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td><center>The Economic Times</center></td>
+            <td><center><a href="https://economictimes.indiatimes.com/industry/transportation/shipping-/-transport/ajay-harinath-singh-aligns-darwin-platform-group-of-companies-with-governments-disinvestment-plans-after-air-india-now-submits-bid-for-shipping-corporation-of-india/articleshow/82078097.cms?from=mdr">Click Here</a></center></td>
+          
+         
+        </tr>
+        <tr>
+            <td><center>The Week</center></td>
+
+            <td><center><a href="https://www.theweek.in/news/biz-tech/2021/04/20/creating-a-new-ecosystem-for-retail-with-cohesive-collaborations.html">Click Here</a></center></td>
+         
+          
+        </tr>
+        
+          <tr>
+            <td><center>ANI News</center></td>
+
+            <td><center><a href="https://www.aninews.in/news/business/business/deurasia-aif-poised-to-raise-600-crores-to-accelerate-retail-healthtech-agritech-and-infrastructure20210724140705/">Click Here</a></center></td>
+           
+          
+          </tr>
+          <tr>
+            <td><center>India News Republic</center></td>
+
+            <td><center><a href="https://indianewsrepublic.com/darwin-platform-group-companies-enter-retail-at-six-new-stores/184626/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Google</center></td>
+
+            <td><center><a href="https://www.google.com/search?q=ajay+harinath+singh&rlz=1C1CHBF_enIN924IN924&biw=1536&bih=722&sxsrf=ALeKk00XOjjns2OplNcakol2A4z_Bpjh-A%3A1627292895824&ei=34T-YKzZMbaf4-EP96u70Ak&oq=ajay+harinath+singh&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjELADECcyBwgjELADECcyBwgjELADECcyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsAMyBwgAEEcQsANKBAhBGABQAFgAYPu-AmgDcAJ4AIABgQOIAYEDkgEDMy0xmAEAqgEHZ3dzLXdpesgBCsABAQ&sclient=gws-wiz&ved=0ahUKEwjsxIC4uoDyAhW2zzgGHffVDpoQ4dUDCA8&uact=5">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Mid-Day</center></td>
+
+            <td><center><a href="https://www.mid-day.com/lifestyle/infotainment/article/business-tycoon-ajay-harinath-singh-gave-34000-jobs-to-the-youth-of-the-nation-at-the-time-of-corona-pandemic-23184160">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Asia One</center></td>
+
+            <td><center><a href="https://asiaone.co.in/ajay-harinath-singh/">Click Here</a></center></td>
+           
+            
+          </tr>
+          
+          <tr>
+            <td><center>Forbes India</center></td>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/made-of-mettle-ajay-harinath-singh/56871/1">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Outlook India</center></td>
+
+            <td><center><a href="https://www.outlookindia.com/newsscroll/mumbai-born-ajay-harinath-singh-wins-champions-of-change-award/1717478">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+
+            <td><center><a href="https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/darwin-platform-group-sbi-caps-discuss-unsolicited-bid-for-jet-airways/articleshow/69341376.cms?from=mdr">Click Here</a></center></td>
+           
+            
+          </tr>
+          
+          <tr>
+            <td><center>Business Standard</center></td>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/mumbai-born-ajay-harinath-singh-wins-champions-of-change-award-120012500586_1.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+
+            <td><center><a href="https://economictimes.indiatimes.com/company/darwin-platform-industries-limited/U27310MH2012PLC236055">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Punekar News</center></td>
+
+            <td><center><a href="https://www.punekarnews.in/the-darwin-platform-group-a-41000-cr-company-to-foray-into-entertainment-industry/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Issuu</center></td>
+
+            <td><center><a href="https://issuu.com/darwin54675/docs/this_privacy_statement.docx">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Business Standard</center></td>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit-120040300645_1.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>ANI News</center></td>
+
+            <td><center><a href="https://www.aninews.in/news/business/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit20200403140550/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+
+            <td><center><a href="https://economictimes.indiatimes.com/magazines/panache/darwin-platform-group-of-companies-forays-into-retail-with-6-new-stores/articleshow/80699710.cms">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>SME Street</center></td>
+
+            <td><center><a href="https://smestreet.in/infocus/manufacturing/dpgc-to-develop-prototypes-for-jackets-arms-and-systems-against-laser-guided-weapons/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Force India</center></td>
+
+            <td><center><a href="https://forceindia.net/dpgc-announces-foray-defence-manufacturing-personal-protection-gear/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Social News</center></td>
+
+            <td><center><a href="https://www.socialnews.xyz/2021/06/27/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Argus News</center></td>
+
+            <td><center><a href="https://argusnews.in/article/national/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Punekar News</center></td>
+
+            <td><center><a href="https://www.punekarnews.in/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Free Press Journal</center></td>
+
+            <td><center><a href="https://www.freepressjournal.in/corporate-gallery/woxsen-university-darwin-platform-group-announces-path-breaking-initiative-indigenously-developed-military-equipment-based-on-molecular-nano-technology-for-indian-armed-forces">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>United News Of India </center></td>
+
+            <td><center><a href="http://www.uniindia.com/dpgc-partners-with-robotics-lab-to-showcase-developed-military-equipment-based-on-mnt/business-economy/news/2435816.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>ANI News</center></td>
+
+            <td><center><a href="https://www.aninews.in/news/business/mumbai-born-ajay-harinath-singh-wins-champions-of-change-award20200125145749/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Financial Express</center></td>
+
+            <td><center><a href="https://www.financialexpress.com/industry/technology/stronger-lighter-new-nano-tech-to-make-military-equipment-lighter-stronger/2280936/">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>India Tv News</center></td>
+
+            <td><center><a href="https://www.indiatvnews.com/science/darwin-platform-group-makes-military-equipment-based-on-molecular-nano-technology-715074">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Week</center></td>
+
+            <td><center><a href="https://www.theweek.in/news/biz-tech/2021/05/19/The-Pandemic-Effects-Nation-in-Distress-Darwin-Platform-Group-Mega-Employment-Scheme-to-Provide-Employment-to-4-Million-People.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>News Nation Tv</center></td>
+
+            <td><center><a href="https://www.newsnationtv.com/india/news/in-gandhi-pocket-borough-bjp-to-rope-in-buineman-ajay-harinath-193761.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Bollywood Helpline</center></td>
+
+            <td><center><a href="http://www.bollywoodhelpline.com/news-gossips/media-buzz/business-tycoon-ajay-harinath-singh-gives-34-000-jobs-to-the-youth-and-1-25000-more-jobs-will-be/60090">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Mid-Day</center></td>
+
+            <td><center><a href="https://www.mid-day.com/lifestyle/infotainment/article/2029-young-leaders-like-ajay-harinath-singh-to-navigate-rough-waters-for-the-post-of-pm-23182874">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Devdiscourse</center></td>
+
+            <td><center><a href="https://www.devdiscourse.com/article/business/1661552-huma-qureshi-inaugurates-darwin-platform-groupss-first-store-dp-retail">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Business Standard</center></td>
+
+            <td><center><a href="https://www.business-standard.com/article/news-ani/after-jet-airways-bidding-darwin-group-of-companies-steps-into-the-entertainment-industry-119110600275_1.html">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>The Economic Times</center></td>
+
+            <td><center><a href="
+                https://m.economictimes.com/industry/transportation/shipping-/-transport/ajay-harinath-singh-aligns-darwin-platform-group-of-companies-with-governments-disinvestment-plans-after-air-india-now-submits-bid-for-shipping-corporation-of-india/articleshow/82078097.cms
+                ">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Forbes India</center></td>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/entrepreneur-with-a-purpose/56107/1
+
+                ">Click Here</a></center></td>
+           
+            
+          </tr>
+          <tr>
+            <td><center>Forbes India</center></td>
+
+            <td><center><a href="https://www.forbesindia.com/article/brand-connect/a-man-with-a-marshmallow-heart/58263/1">Click Here</a></center></td>
+           
+            
+          </tr>
+        
+      </tfoot>
+    </table>
+
+
+    <br><br>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
+    
+    </p>
+    <br><br>
+    <hr>
+    <p style="font-size: 10px;" align="right"><span class="blinking">Version 1.0.2</span></p>
+
+
+    <center>
+      <p style="font-size: 13px;">&copy;2021-22 All Rights Reserved by JAYANTA DUTTA (DPRL282543)</p>
+    </center>
+
+  </div>
+
+  <script src="dropdown.js"></script>
+
+</body>
+
+<script>
+  var myApp = new function () {
+    this.printTable = function () {
+      var customers = document.getElementById('customers');
+      var win = window.open('', '', 'height=700,width=700');
+      win.document.write(customers.outerHTML);
+      win.document.close();
+      win.print();
+    }
+  }
+</script>
+
+
+</html>
