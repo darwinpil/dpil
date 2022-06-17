@@ -243,20 +243,7 @@
    
 
 
-    <br><br>
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-    <input type="button" class="button" value="Print Table" onclick="myApp.printTable()" />
     
-    </p>
-    <br><br>
     <hr>
     <p style="font-size: 10px;" align="right"><span class="blinking">Version 1.0.2</span></p>
 
@@ -271,17 +258,7 @@
 
 </body>
 
-<script>
-  var myApp = new function () {
-    this.printTable = function () {
-      var customers = document.getElementById('customers');
-      var win = window.open('', '', 'height=700,width=700');
-      win.document.write(customers.outerHTML);
-      win.document.close();
-      win.print();
-    }
-  }
-</script>
+
 
 
 </html>
