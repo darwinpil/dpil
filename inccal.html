@@ -249,19 +249,16 @@
     <center><u><h3>Income Calculation</u></h3></center>
     <p id="demo"></p>
 <script>
-          var u = prompt("Please Enter Unit/Units", "100");
-         
-        
-         var bamt = Number(u)*10000;
+          var lamt = prompt("Please Enter Loan Amount which you taken 10th Dec 2020", "10000");
+         var  interest = prompt("Please Enter Per Month Interest (%)", "7.5");
+         var a = (lamt*interest)/100;
+         var b = Number(a)+Number(lamt);
 
-         var eamt = Number(u)*2200;
-         var tamt = Number(bamt)+Number(eamt);
+         var c = Number(b)*interest/100;
+         var d = Number(c)+Number(b);
 
-         
-
-
-         document.getElementById("demo").innerHTML = "<b><li>Purchased Unit/ Units :"+ u.toFixed(2)+"<br>"+"Base amount :"+ bamt.toFixed(2)+"<br></li>"+
-         "<li>Your Extra Amount :"+ eamt.toFixed(2)+"<br>"+"Total Amount :"+ tamt.toFixed(2)+"<br></li>";
+         document.getElementById("demo").innerHTML = "<b><li>Your (10th Dec 2020 to 09th Jan 2021(30 Days)) Interest Amount :"+ a.toFixed(2)+"<br>"+"Till 09th Jan 2021 Total Loan Amount :"+ b.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Jan 2021 to 08th Feb 2021 (30 Days)) Interest Amount :"+ c.toFixed(2)+"<br>"+"Till 08th Feb 2021 Total Loan Amount :"+ d.toFixed(2)+"<br><br></li>";
     </script>
     <center><a href="" class="btn btn-outline-primary" role="button">Okey</a></center>
 
