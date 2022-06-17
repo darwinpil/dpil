@@ -249,18 +249,81 @@
     <center><u><h3>Income Calculation</u></h3></center>
     <p id="demo"></p>
 <script>
-         var unit = prompt("Please Enter Unit/Unints whatever you want, "1");
+         var lamt = prompt("Please Enter Loan Amount which you taken 10th Dec 2020", "10000");
+         var  interest = prompt("Please Enter Per Month Interest (%)", "7.5");
+         var a = (lamt*interest)/100;
+         var b = Number(a)+Number(lamt);
+
+         var c = Number(b)*interest/100;
+         var d = Number(c)+Number(b);
+
+         var e = Number(d)*interest/100;
+         var f = Number(e)+Number(d);
          
-         var bamt = (unit*10000);
-         var eamt = (unit*2200);
+         var g = Number(f)*interest/100;
+         var h = Number(g)+Number(f);
 
-         var tamt = (bamt+eamt);
+         var i = Number(h)*interest/100;
+         var j = Number(h)+Number(i);
+
+         var k = Number(j)*interest/100;
+         var l = Number(j)+Number(k);
+
+         var m = Number(l)*interest/100;
+         var n = Number(l)+Number(m);
+
+         var o = Number(n)*interest/100;
+         var p = Number(n)+Number(o);
+
+         var q = Number(p)*interest/100;
+         var r = Number(p)+Number(q);
+
+         var s = Number(r)*interest/100;
+         var t = Number(r)+Number(s);
+
+         var u = Number(t)*interest/100;
+         var v = Number(t)+Number(u);
+
+         var v3 = Number(v)*interest/100;
+         var v1 = (v3/30)*17;
+         var v2 = Number(v)+Number(v1);
+        var q1 = v2-5000;
+
+         var q2 =Number(q1)*interest/100;
+         var q3 = (q2/30)*19;
+         var q4 = q3+q1;
+         var q5 = q4-5000;
+
+       
+         var q6 =Number(q5)*interest/100;
+         var q7 = (q6/30)*25;
+         var q8 = q7+q5;
+         var q9 = q8-10000;
+
+
+
+         document.getElementById("demo").innerHTML = "<b><li>Your (10th Dec 2020 to 09th Jan 2021(30 Days)) Interest Amount :"+ a.toFixed(2)+"<br>"+"Till 09th Jan 2021 Total Loan Amount :"+ b.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th Jan 2021 to 08th Feb 2021 (30 Days)) Interest Amount :"+ c.toFixed(2)+"<br>"+"Till 08th Feb 2021 Total Loan Amount :"+ d.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th Feb 2021 to 10th March 2021 (30 Days)) Interest Amount :"+ e.toFixed(2)+"<br>"+"Till 10th March 2021 Total Loan Amount :"+ f.toFixed(2)+"<br><br></li>"+
+         "<li>Your (11th March 2021 to 09th April 2021 (30 Days)) Interest Amount :"+ g.toFixed(2)+"<br>"+"Till 09th April 2021 Total Loan Amount :"+ h.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th April 2021 to 09th May 2021 (30 Days)) Interest Amount :"+ i.toFixed(2)+"<br>"+"Till 09th May 2021 Total Loan Amount :"+ j.toFixed(2)+"<br><br></li>"+
+         "<li>Your (10th May 2021 to 08th June (30 Days)) Interest Amount :"+ k.toFixed(2)+"<br>"+"Till 08th June 2021 Total Loan Amount :"+ l.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th June 2021 to 08th July 2021 (30 Days)) Interest Amount :"+ m.toFixed(2)+"<br>"+"Till 08th July 2021 Total Loan Amount :"+ n.toFixed(2)+"<br><br></li>"+
+         "<li>Your (09th July 2021 to 07th Aug 2021 (30 Days)) Interest Amount :"+ o.toFixed(2)+"<br>"+"Till 07th Aug 2021 Total Loan Amount :"+ p.toFixed(2)+"<br><br></li>"+
+         "<li>Your (08th Aug 2021 to 06th Sept 2021 (30 Days)) Interest Amount :"+ q.toFixed(2)+"<br>"+"Till 06th Sept 2021 Total Loan Amount :"+ r.toFixed(2)+"<br><br></li>"+
+         "<li>Your (07th Sept 2021 to 06th Oct 2021 (30 Days)) Interest Amount :"+ s.toFixed(2)+"<br>"+"Till 06th Oct 2021 Total Loan Amount :"+ t.toFixed(2)+"<br><br></li>"+
+         "<li>Your (07th Oct 2021 to 05th Nov 2021 (30 Days)) Interest Amount :"+ u.toFixed(2)+"<br>"+"Till 05th Nov 2021 Total Loan Amount :"+ v.toFixed(2)+"<br><br></li>"+
+         "<li>Your (06th Nov 2021 to 22nd Nov 2021 (17 Days)) Interest Amount :"+ v1.toFixed(2)+"<br>"+"Till 22nd Nov 2021 Total Loan Amount :"+ v2.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 5000/- on 22nd Nov 2021</style></li>"+
+         "<li>Your Loan Amount Till 22nd Nov 2021: "+q1.toFixed(2)+"/-</li>"+"<br><br>"+
+         "<li>Your (23rd Nov 2021 to 11th Dec 2021 (19 Days)) Interest Amount : "+ q3.toFixed(2)+"<br>"+"Till 11th Dec 2021 Total Loan Amount :"+ q4.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 5000/- on 11th Dec 2021</style></li>"+
+         "<li>Your Loan Amount Till 11th Dec 2021: "+q5.toFixed(2)+"/-</li>"+"<br><br>"+
          
-
-
-
-         document.getElementById("demo").innerHTML = "<b><li>Your Base Amount is :"+ bamt.toFixed(2)+"<br>"+"Your Extra Amount is:"
-           + eamt.toFixed(2)+"<br>"+"Your Total Amount is :"+ tamt.toFixed(2)+"<br><br></li>";
+         "<li>Your (11th Dec 2021 to 4th Jan 2022 (25 Days)) Interest Amount : "+ q7.toFixed(2)+"<br>"+"Till 04th Dec 2022 Total Loan Amount :"+ q8.toFixed(2)+"<br><br></li>"+
+         "<li style = color:green> You Piad Rs 10000/- on ) 4th Jan 2022</style></li><br><br>"+
+         "<li>Your Loan Amount Till 04th Jan 2022: "+q9.toFixed(2)+"/-</li></b>"+
+         "<h3 style =color:red>To Be Paid Rs : " +q9.toFixed(2)+"/-</h3></style>";
          
          
     </script>
