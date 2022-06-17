@@ -267,6 +267,18 @@
          "<li>Extra Amount :"+" "+ c.toFixed(2)+"<br></li>"+"<li>Total Amount to be paid :"+" "+ d.toFixed(2)+"<br></li>"+"<li>Your Monthly Income :"+" "+ e.toFixed(2)+"<br></li>"
   +"<li>Your Forthnight Income :"+" "+ f.toFixed(2)+"<br></li>" +"<li>After 20% deduction (Admin Charge), payable forthnight Income :"+" "+ g.toFixed(2)+"<br></li>";
     </script>
+    <p id="demo1"></p>
+    <script>
+    let greeting;
+  
+  if (Number(g)>770){
+  greeting="Amount is Greater Than Rs 770, So further Procced.";
+  }else{
+  greeting="Amount is Lower than Rs 770, So Hold It, Wait for Next Payout.";
+  }
+  
+  document.getElementById("demo1").innerHTML = greeting;
+    </script>
     
     <center><a href="" class="btn btn-outline-primary" role="button">Okey</a></center>
 
