@@ -263,8 +263,8 @@
   
   
 
-         document.getElementById("demo").innerHTML = "<b><li>You purchased unit/units :"+" "+ a.toFixed(0)+"<br><br></li>"+"<li>Base Amount :"+" "+ b.toFixed(2)+"<br><br></li>"+
-         "<li>Extra Amount :"+" "+ c.toFixed(2)+"<br><br></li>"+"<li style = color:blue>Total Amount to be paid :"+" "+ d.toFixed(2)+"<br><br></li></stlye>"+"<li>Your Monthly Income :"+" "+ e.toFixed(2)+"<br><br></li>"
+         document.getElementById("demo").innerHTML = "<li>You purchased unit/units :"+" "+ a.toFixed(0)+"<br><br></li>"+"<li>Base Amount :"+" "+ b.toFixed(2)+"<br><br></li>"+
+         "<li>Extra Amount :"+" "+ c.toFixed(2)+"<br><br></li>"+"<b><li style = color:blue>Total Amount to be paid :"+" "+ d.toFixed(2)+"<br><br></li></b></stlye>"+"<li>Your Monthly Income :"+" "+ e.toFixed(2)+"<br><br></li>"
   +"<li>Your Forthnight Income :"+" "+ f.toFixed(2)+"<br><br></li>" +"<li>After 20% deduction (Admin Charge), payable forthnight Income :"+" "+ g.toFixed(2);
     </script>
     <p id="demo1"></p>
@@ -272,7 +272,7 @@
     let greeting;
   
   if (Number(g)>770){
-  greeting="Amount is Greater Than Rs 770, So further Procced.";
+  greeting="<h3 style =color:green>Amount is Greater Than Rs 770, So further Procced.+"</h3></style>";
   
   var i = Number(g)/10;
   var j = Number(g)- Number(i);
@@ -287,7 +287,7 @@
    +"<li>You get"+" "+ m.toFixed(2)+" "+ "times of your given amount<br><br></li>" +"<li>You will get total into E-Com wallet within 37 months (74 Forthnight Payout), Rs :"+" "+ n.toFixed(2)+"<br><br></li>"
    +"<li>You will get total amount (E-Com wallet + Bank A/c) within 37 months(74 Forthnight Payout), Rs :"+" "+ o.toFixed(2)+"<br><br></li>"+"<li>You get"+" "+ p.toFixed(2)+" "+ "times of your given amount<br></li>";;
   }else{
-  greeting="Amount is Lower than Rs 770, So Hold It, Wait for Next Forthnight Payout.";
+  greeting="<h3 style =color:red>Amount is Lower than Rs 770, So Hold It, Wait for Next Forthnight Payout.+"</h3></style>";
     var h = Number(g);
     var i = Number(h*2);
     var j = Number(i*0.1);
