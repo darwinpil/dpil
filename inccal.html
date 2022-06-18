@@ -259,13 +259,19 @@
          var e = Number(b)/10;
          var f = Number(e)/2;
          var g = Number(f)-Number(f)*0.2;
+  var i = Number(g)/10;
+  var j = Number(g)- Number(i);
+  var k = Number(j)-140;
+  var l = Number(k)*37;
   
   
   
 
          document.getElementById("demo").innerHTML = "<b><li>You purchased unit/units :"+" "+ a.toFixed(0)+"<br></li>"+"<li>Base Amount :"+" "+ b.toFixed(2)+"<br></li>"+
          "<li>Extra Amount :"+" "+ c.toFixed(2)+"<br></li>"+"<li>Total Amount to be paid :"+" "+ d.toFixed(2)+"<br></li>"+"<li>Your Monthly Income :"+" "+ e.toFixed(2)+"<br></li>"
-  +"<li>Your Forthnight Income :"+" "+ f.toFixed(2)+"<br></li>" +"<li>After 20% deduction (Admin Charge), payable forthnight Income :"+" "+ g.toFixed(2)+"<br></li>";
+  +"<li>Your Forthnight Income :"+" "+ f.toFixed(2)+"<br></li>" +"<li>After 20% deduction (Admin Charge), payable forthnight Income :"+" "+ g.toFixed(2)+"<br></li>"
+  +"<li>Cash goes to your E-Com Wallet :"+" "+ i.toFixed(2)+"<br></li>" +"<li>Spin Wheel deduction (per pan card per pay out), Rs :"+" "+ 140+"/-<br></li>"
+   +"<li>So after Spin Wheel Deduction Net Payable Amount in your Bank A/c, Rs :"+" "+ k.toFixed(2)+"<br></li>" +"<li>Get this amount 37 months,so total you get Rs :"+" "+ l.toFixed(2)+"<br></li>";
     </script>
     <p id="demo1"></p>
     <script>
