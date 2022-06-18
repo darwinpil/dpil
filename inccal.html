@@ -258,7 +258,7 @@
          var d = Number(c)+Number(b);
          var e = Number(b)/10;
          var f = Number(e)/2;
-         var g = Number(f)-Number(f)*0.2
+         var g = Number(f)-Number(f)*0.2;
   
   
   
@@ -274,10 +274,11 @@
   if (Number(g)>770){
   greeting="Amount is Greater Than Rs 770, So further Procced.";
   }else{
-  greeting="Amount is Lower than Rs 770, So Hold It, Wait for Next Payout.";
+  greeting="Amount is Lower than Rs 770, So Hold It, Wait for Next Forthnight Payout.";
+    var h = Number(g);
   }
   
-  document.getElementById("demo1").innerHTML = greeting;
+  document.getElementById("demo1").innerHTML = greeting+"<br></li>"+"<li>Next Forthnight payout (after admin deduction 20%) :"+" "+ h.toFixed(2);
     </script>
     
     <center><a href="" class="btn btn-outline-primary" role="button">Okey</a></center>
