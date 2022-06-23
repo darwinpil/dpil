@@ -245,7 +245,7 @@
           <th><center>Published On</center></th>
           <th><center>Heading</center></th>
           <th><center>Link</center></th>
-          
+          <th><center>Share</center></th>
 
         </tr>
       </thead>
@@ -520,7 +520,7 @@
             <td><center>Darwin Platform Group of Companies launches advanced and quick Covid Test Kit</td></center>
 
             <td><center><a href="https://www.aninews.in/news/business/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit20200403140550/">Click Here</a></center></td>
-           
+            <td><button onclick="window.open('whatsapp://send?https://www.aninews.in/news/business/darwin-platform-group-of-companies-launches-advanced-and-quick-covid-test-kit20200403140550/')"> Share by WhatsApp </button> </td>
             
           </tr>
           <tr>
@@ -915,7 +915,14 @@
   <script src="dropdown.js"></script>
 
 </body>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
 <script>
   var myApp = new function () {
     this.printTable = function () {
